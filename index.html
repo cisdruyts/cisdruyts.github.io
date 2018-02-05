@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CisDruyts Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+
+<body>
+    <div id="menu">
+        <div class="down">
+
+            <ul>
+                <li>
+                    <h1>ABOUT</h1>
+                    <p> Hello there! My name is Cis Druyts and I am a student graphic design in Sint Lucas Antwerp. Here's a selection of my work.</p>
+
+
+                </li>
+                <li>
+                    <h1>CONTACT</h1>
+                    <p>You can always send me an e-mail. cis.druyts@student.kdg.be </p>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="allprojects">
+
+
+
+        <div class="project"><img src="afbeeldingen/poster_film2.jpg" alt=""></div>
+
+        <div class="project"><img src="afbeeldingen/poster_film.jpg" alt=""></div>
+
+
+
+        <div class="project"><img src="afbeeldingen/poster_savesex.jpg" alt=""></div>
+
+        <div class="project"><img src="afbeeldingen/kaartjes_savesex.jpg" alt=""></div>
+
+
+        <div class="project"><img src="afbeeldingen/magazine_foodwast.jpg" alt=""></div>
+
+        <div class="project"><img src="afbeeldingen/magazine_foodwaste2.jpg" alt=""></div>
+
+        <div class="project"><img src="afbeeldingen/foodwaste_actie.jpg" alt=""></div>
+
+        <div class="project"><img src="afbeeldingen/poster_foodwaste3.jpg" alt=""></div>
+
+        <div class="project"><img src="afbeeldingen/poster_foodwaste_1.jpg" alt=""></div>
+
+        <div class="project"><img src="afbeeldingen/poster_foodwaste4.jpg" alt=""></div>
+
+        <div class="project"><img src="afbeeldingen/poster_foodwaste_2.jpg" alt=""></div>
+
+
+
+
+        <div class="project"><img src="afbeeldingen/UPmanual.jpg" alt=""></div>
+
+        <div class="project"><img src="afbeeldingen/poster_UP.jpg"></div>
+
+
+        <div class="project"><img src="afbeeldingen/trendfeed%20mockup.jpg"></div>
+
+
+
+    </div>
+    <script>
+        function toggleMenu() {
+            this.classList.toggle('open');
+        }
+
+        var list = document.querySelectorAll("#menu li");
+
+        for (var i = 0; i < list.length; i++) {
+            list[i].addEventListener('click', toggleMenu);
+        }
+    </script>
+
+
+</body>
+
+</html>

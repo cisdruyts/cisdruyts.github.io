@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+}
+
+
+/*____________MENU________*/
+
+#menu ul {
+    font-family: sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    margin-left: 20px;
+    line-height: 30px;
+}
+
+#menu li {
+    width: 85vw;
+    height: 5rem;
+    overflow: hidden;
+    background: yellow;
+    padding: 3vh;
+    list-style: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    transition: height 0.3s;
+}
+
+#menu li.open {
+    height: 13rem;
+}
+
+#menu li h1 {
+    font-size: 2rem;
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+
+#menu li p {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 1.3rem;
+    color: black;
+    line-height: 24px;
+}
+
+#menu li:hover {
+    color: white;
+}
+
+
+/*-----menu groter dan smartphone-------*/
+
+@media (min-width: 700px) {
+    #menu li {
+        width: 50vw;
+        height: 5rem;
+    }
+    #menu li h1 {
+        font-size: 3rem;
+    }
+    #menu li p {
+        font-size: 2rem;
+    }
+    #menu li.open {
+        height: 18rem;
+    }
+    #menu li p {
+        line-height: 24pt;
+    }
+}
+
+
+/*-----menu groter dan tablet-------*/
+
+@media (min-width: 1700px) {
+    #menu li {
+        width: 30vw;
+        height: 5.5rem;
+        border-bottom: 10px;
+    }
+    #menu li h1 {
+        font-size: 4rem;
+    }
+    #menu li p {
+        font-size: 2rem;
+        line-height: 30px;
+    }
+    #menu li.open {
+        height: 18rem;
+    }
+}
+
+
+/*------------------------*/
+
+button:hover {
+    color: white;
+}
+
+#menu {
+    z-index: 100;
+    position: fixed;
+    transform: translate(-90.9%, 0);
+    transition: transform 0.5s ease-out;
+}
+
+#menu:hover {
+    transform: translate(0, 0);
+}
+
+img {
+    max-width: 100%;
+    border-bottom: 0px;
+}
+
+.allprojects {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vw;
+    flex-direction: row;
+}
+
+.project {
+    width: 100%;
+    overflow: hidden;
+}
+
+.twistProject {
+    width: 100%;
+    overflow: hidden;
+    transition: 2s;
+}
+
+
+/* Larger than mobile */
+
+@media (min-width: 400px) {
+    .project {
+        width: 50%;
+    }
+    .twistProject {
+        width: 50%;
+    }
+}
+
+
+/* Larger than tablet */
+
+@media (min-width: 750px) {
+    .project {
+        width: 33.33333%;
+    }
+    .twistProject {
+        width: 33.33333%;
+    }
+}
+
+
+/* Larger than laptop */
+
+@media (min-width: 1900px) {
+    .project {
+        width: 25%;
+    }
+    .twistProject {
+        width: 25%;
+    }
+}
+
+.twistProject img {
+    /*	-webkit-transform: rotate(15deg) scale(1.4);*/
+    transform: rotate(15deg) scale(1.4);
+    /*	-webkit-transition: .3s ease-in-out;*/
+    /*	transition: .3s ease-in-out;*/
+    transition: transform .3s;
+}
+
+.twistProject:hover img {
+    -webkit-transform: rotate(0) scale(1);
+    transform: rotate(0) scale(1);
+}
+
+.project:hover img {
+    -webkit-transform: rotate(0) scale(1);
+    transform: rotate(0) scale(1);
+}
+
+.project img {
+    /*	-webkit-transform: rotate(15deg) scale(1.4);*/
+    transform: rotate(15deg) scale(1.4);
+    /*	-webkit-transition: .3s ease-in-out;*/
+    /*	transition: .3s ease-in-out;*/
+    transition: transform .3s;
+}
