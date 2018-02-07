@@ -79,7 +79,7 @@ body {
 
 /*-----menu groter dan tablet-------*/
 
-@media (min-width: 1700px) {
+@media (min-width: 1640px) {
     #menu li {
         width: 30vw;
         height: 5.5rem;
@@ -139,33 +139,45 @@ img {
 }
 
 
-/* Larger than mobile */
+/* larger than nothing (mobile) */
 
-@media (min-width: 400px) {
+@media (min-width: 1px) {
     .project {
-        width: 50%;
+        width: 100%;
     }
     .twistProject {
-        width: 50%;
+        width: 100%;
+    }
+}
+
+
+/* Larger than mobile */
+
+@media (min-width: 500px) {
+    .project {
+        width: 49%;
+    }
+    .twistProject {
+        width: 49%;
+    }
+}
+
+
+/* Larger than tussenstop */
+
+@media (min-width: 575px) {
+    .project {
+        width: 33%;
+    }
+    .twistProject {
+        width: 33%;
     }
 }
 
 
 /* Larger than tablet */
 
-@media (min-width: 750px) {
-    .project {
-        width: 33.33333%;
-    }
-    .twistProject {
-        width: 33.33333%;
-    }
-}
-
-
-/* Larger than laptop */
-
-@media (min-width: 1900px) {
+@media (min-width: 800px) {
     .project {
         width: 25%;
     }
