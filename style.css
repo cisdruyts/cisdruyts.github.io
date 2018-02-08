@@ -211,3 +211,16 @@ img {
     /*	transition: .3s ease-in-out;*/
     transition: transform .3s;
 }
+
+#info {
+    position: absolute;
+    left: -100px;
+    top: -100px;
+    z-index: 1000;
+    color: black;
+    background:yellow;
+    font-family: sans-serif;
+    width: 300px;
+    font-size: 1.5rem;
+
+}
